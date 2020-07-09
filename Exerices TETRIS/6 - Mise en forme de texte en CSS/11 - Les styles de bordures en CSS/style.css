@@ -1,0 +1,30 @@
+.article{
+    border: solid rgba(0,0,0,0.3);
+    border-radius: 10px ;
+    line-height: 1.5;
+
+}
+
+
+.titre-article{
+
+   border-bottom: 1px solid;
+
+
+}
+
+
+.detail-article{
+  padding: 50px;
+  text-align: center;
+  color: #7b7b7b;
+  font-size: 1em;
+}
+
+.#{
+    color: white;
+    padding: 10px;
+    background-color:rgb(136, 112, 255);
+    border: 200px/50px;
+    text-decoration:none;
+}

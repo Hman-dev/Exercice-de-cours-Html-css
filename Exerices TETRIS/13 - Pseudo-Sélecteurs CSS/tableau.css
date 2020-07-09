@@ -1,0 +1,57 @@
+
+table{
+  border:none;
+}
+
+caption{
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+
+
+th,td{
+  padding: 10px;
+  text-align: center;
+}
+
+ tr:first-child th:nth-child(2){/* Ici on cible le 1er eanfant de tr et le 2ème enfant de th: ,on chage les bordure bleu en noir */
+  font-size: 2em;
+  color: blue;
+  border-color: black;
+}
+
+tbody>tr:nth-child(odd){
+background-color: #F1654C;
+}
+
+tbody>tr:nth-child(even){
+  background-color:#FCB941;
+}
+
+
+tbody>tr:nth-child(odd) td:first-child {/* Dans la premiere ligne de la celulle du tableau "tbody" ainsi que les lignes impaires prendre le prmièr enfant des données de la cellule "td" */
+  background-color: #7E3661;
+  color: #fff;
+}
+
+tbody>tr:nth-child(even) td:first-child {
+  background-color: #888888;
+  color: #fff;
+}
+
+tbody>tr:nth-child(odd) td:last-child{
+
+  background-color: #8870FF;
+  color: #fff;
+}
+
+/*tr:first-child th:last-child{/*
+  border-top: none;
+  border-right: none;
+}/**/
+
+
+th:last-child[rowspan="2"]{
+  border-top: none;
+  border-right: none;
+}

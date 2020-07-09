@@ -1,0 +1,73 @@
+body{
+  width: 100%;
+}
+
+
+
+.Menu{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 47px -10px 20px 0px;
+  list-style-type: none;
+}
+
+.Menu li{
+  list-style-type: none;
+}
+
+
+
+a{
+  font-size: 25px;
+  color: grey;
+  margin: 20px 20px;
+  text-decoration:none;
+
+}
+
+.deroulant{
+  /*/overflow: hidden;*/
+ /* les élements du sous-menu "déroulant" disparaissent grâce à la propriété display*/
+  text-align: center;
+  font-size: 19px;
+  max-height: 0em;
+  margin: 0;padding: 0;
+  overflow: hidden;
+}
+
+li:hover .deroulant{ /* au passage de la souris sur la balise <li> class deroulant apparait en block */
+  display: block;
+  padding: 0px 0px;
+  max-height: 13em;
+  transition: 1s max-height 0.3s;  /*transition: 0.5s max-height 0.3s;*/
+  border-top:  4px solid rgba(1,100,250,0.726);
+}
+
+.Menu>.dropdown:hover{
+
+border-bottom:  4px solid rgba(1,100,250,0.726);
+}
+
+.deroulant li
+{
+  padding-top: 0px;
+  margin: 2px;
+  background-color: grey;
+
+
+
+}
+
+
+
+.deroulant li a{
+
+  color: white;
+  text-decoration: none;
+
+}
+
+.deroulant li:hover{
+  background-color: rgba(1, 100, 250, 0.726)
+}

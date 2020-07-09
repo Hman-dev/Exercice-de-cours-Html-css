@@ -1,0 +1,30 @@
+.article{
+  position:relative;/* tes dans l'environnement du cadre */
+  margin: auto;
+  width: 30em;
+  height: 25em;
+  border: 1px solid;
+  background-color: rgb(192, 192, 192);
+} 
+
+.details{
+  position: absolute; /* c'est directement en psoition en pixel lorsqu'on est absolute v'est des décallage par rapport au père on a une liberté en absolute que en relatif */
+  top: 100px; left: 80px;
+  overflow: hidden;
+  border:1px solid;
+  background-color: rgb(68, 119, 255);
+
+
+}
+
+.fix{
+  position: absolute;
+  bottom: 0px;
+  right: 0px; 
+  border: 10px ;
+  padding: 10px;
+  padding-right: 100px;
+
+  background-color: rgb(51, 85, 255);
+  
+}

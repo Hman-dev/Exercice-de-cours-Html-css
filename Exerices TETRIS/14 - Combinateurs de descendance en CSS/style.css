@@ -1,0 +1,15 @@
+.article p{
+  margin-left: 20px;
+}
+
+h2+p{/*Ici on cible n'importe quel élément <p> qui suit immédiatement la balise <H2>*/
+  background-color: yellow;
+}
+
+h2~p{
+  border: solid black;/* ici on cible les élements "p" qui suivent immédiatement ou non le titre "h2" et qui ont le même élement parent*/
+}
+
+li p{ /* Ici grâce à ce selecteur on cible n'importe quel élément paragraphe"p" situé à l'intérieur de l'élement "li" ou l'enfant direct à la balise "li"*/
+  color: green;
+}
